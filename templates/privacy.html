@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+
+{% block title %}Privacy Policy — Spendly{% endblock %}
+
+{% block content %}
+
+<section class="legal-header">
+    <div class="legal-header-inner">
+        <div class="hero-badge">Legal</div>
+        <h1 class="legal-title">Privacy <em>Policy</em></h1>
+        <p class="legal-intro">
+            Your financial data is personal. This policy explains what Spendly
+            collects, how we use it, and how we keep it safe.
+        </p>
+        <p class="legal-updated">Last updated · October 5, 2026</p>
+    </div>
+</section>
+
+<section class="legal-body">
+    <div class="legal-card">
+
+        <div class="legal-section">
+            <span class="legal-num">01</span>
+            <div>
+                <h2>Data We Collect</h2>
+                <p>We only collect what we need to run the service:</p>
+                <ul>
+                    <li>Account details, such as your name, email address, and a securely hashed password.</li>
+                    <li>Expense records you enter, including amount, category, date, and description.</li>
+                    <li>Basic technical information, such as browser type and session data, needed to keep you signed in.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="legal-section">
+            <span class="legal-num">02</span>
+            <div>
+                <h2>How We Use Your Data</h2>
+                <p>Your data is used solely to provide and improve Spendly. This includes:</p>
+                <ul>
+                    <li>Displaying your expenses, category breakdowns, and summaries.</li>
+                    <li>Authenticating you and keeping your account secure.</li>
+                    <li>Diagnosing problems and improving the reliability of the service.</li>
+                </ul>
+                <p class="legal-note">
+                    We never sell your personal or financial data, and we do not use it
+                    for advertising.
+                </p>
+            </div>
+        </div>
+
+        <div class="legal-section">
+            <span class="legal-num">03</span>
+            <div>
+                <h2>Data Storage</h2>
+                <p>
+                    Your data is stored in a secured database. Passwords are never stored in
+                    plain text. We keep your data for as long as your account is active, and
+                    you may request deletion of your account and all associated records at
+                    any time.
+                </p>
+                <p>
+                    While we take reasonable measures to protect your information, no method
+                    of storage or transmission is completely secure.
+                </p>
+            </div>
+        </div>
+
+        <div class="legal-section">
+            <span class="legal-num">04</span>
+            <div>
+                <h2>Third Party Services</h2>
+                <p>
+                    Spendly may rely on a small number of trusted third-party providers, such
+                    as hosting and font delivery services, to operate. These providers only
+                    receive the minimum information required to perform their function and
+                    are not permitted to use it for any other purpose.
+                </p>
+            </div>
+        </div>
+
+        <div class="legal-section">
+            <span class="legal-num">05</span>
+            <div>
+                <h2>Contact Us</h2>
+                <p>
+                    If you have questions about this policy or want to access, correct, or
+                    delete your data, contact us at
+                    <a class="legal-link" href="mailto:privacy@example.com">privacy@example.com</a>.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="legal-footer">
+        <p>Ready to take control of your spending?</p>
+        <a href="{{ url_for('register') }}" class="btn-primary">Create free account</a>
+    </div>
+</section>
+
+{% endblock %}
