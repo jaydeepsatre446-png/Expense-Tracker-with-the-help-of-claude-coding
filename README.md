@@ -7,9 +7,9 @@ A personal expense tracker web app built with Flask and SQLite, developed step b
 **Done**
 - Landing page
 - Register and login pages (UI only)
+- Step 1 — Database setup (`database/db.py`: `get_db`, `init_db`, `seed_db`)
 
 **Planned**
-- Step 1 — Database setup (`database/db.py`: `get_db`, `init_db`, `seed_db`)
 - Step 3 — Logout
 - Step 4 — Profile page
 - Step 7 — Add expense
